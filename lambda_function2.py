@@ -5,7 +5,7 @@ import argparse
 import matplotlib
 matplotlib.use('Agg')
 
-def lambda_handler(event,context):
+def handler(event,context):
   print('OpenCV 버전 = ', cv2.__version__)
   print('numpy 버전 = ', np.__version__)
   print('imutils 버전 = ', imutils.__version__)
