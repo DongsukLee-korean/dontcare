@@ -11,7 +11,7 @@ RUN yum install git -y
 RUN git clone https://github.com/DongsukLee-korean/dontcare.git
 
 # install packages
-RUN pip install -r dontcare/requirements.txt
+RUN pip3 install -r dontcare/requirements.txt
 
 # git repository 의 lambda_function.py 를 Container 내부의 /var/task/ 로 이동
 RUN cp dontcare/lambda_function.py /var/task/
