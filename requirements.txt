@@ -1,7 +1,5 @@
 opencv-python==4.2.0.32
 opencv-contrib-python==4.2.0.32
-tensorflow==1.15
-tensorflow-gpu==1.15
 scikit-image==0.17.2
 argparse==1.1
 imutils==0.5.4
