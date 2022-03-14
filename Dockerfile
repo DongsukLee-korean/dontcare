@@ -13,7 +13,7 @@ RUN git clone https://github.com/DongsukLee-korean/dontcare.git
 # install packages
 RUN pip install -r dontcare/requirements.txt
 
-RUN pip install tensorflow==2.5.0
+RUN pip install --upgrade tensorflow==2.5.0 --no-cache-dir
 
 # git repository 의 lambda_function.py 를 Container 내부의 /var/task/ 로 이동
 RUN cp dontcare/lambda_function.py /var/task/
