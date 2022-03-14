@@ -13,6 +13,10 @@ RUN git clone https://github.com/DongsukLee-korean/dontcare.git
 # install packages
 RUN pip3 install -r dontcare/requirements.txt
 
+RUN pip3 install --upgrade tensorflow==1.15 --no-cache-dir
+
+RUN pip3 install --upgrade tensorflow-gpu==1.15 --no-cache-dir
+
 # git repository 의 lambda_function.py 를 Container 내부의 /var/task/ 로 이동
 RUN cp dontcare/lambda_function.py /var/task/
 
