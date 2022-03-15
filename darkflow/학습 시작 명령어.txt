@@ -1,0 +1,8 @@
+학습 시작
+python flow --model C:/labelImg-master/darkflow/cfg/my-tiny-yolo.cfg --labels C:/labelImg-master/darkflow/labels.txt --trainer adam --dataset C:/labelImg-master/darkflow/darkflow/data/dataset/ --annotation C:/labelImg-master/darkflow/darkflow/data/annotations/ --train --summary ./logs --batch 5 --epoch 100 --save 50 --keep 5 --lr 1e-04 --gpu 0.5
+
+이어서 학습
+python flow --model C:/labelImg-master/darkflow/cfg/my-tiny-yolo.cfg --labels C:/labelImg-master/darkflow/labels.txt --trainer adam --dataset C:/labelImg-master/darkflow/darkflow/data/dataset/ --annotation C:/labelImg-master/darkflow/darkflow/data/annotations/ --train --summary ./logs --batch 5 --epoch 100 --save 50 --keep 5 --lr 1e-04 --gpu 0.5 --load -1
+
+학습 진행도 그래프로 확인
+tensorboard --logdir=C:/labelImg-master/darkflow/logstrain/
